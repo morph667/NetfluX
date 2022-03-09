@@ -10,7 +10,6 @@ import Axios from 'axios';
 
 import QuickView from './QuickView';
 
-import {Link} from 'react-router-dom';
 
 
 
@@ -56,12 +55,10 @@ function Banner() {
             {truncateText(movie?.overview, 100)}
             </p>
             <div className='banner__buttons'>
-                <Link to={`/video/${movie?.id}`} >
-                    <button className='banner__button banner__button--play'>
-                        <PlayArrowIcon />
-                        Lecture
-                    </button>
-                </Link>
+                <button className='banner__button banner__button--play'>
+                    <PlayArrowIcon />
+                    Lecture
+                </button>
                 <button className='banner__button' onClick={handleClickPopup}>
                     <HelpOutlineIcon />
                     Plus d'infos

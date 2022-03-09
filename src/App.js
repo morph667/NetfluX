@@ -3,58 +3,44 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Banner from './components/Banner';
 import Row from './components/Row';
-import Video from './components/Video';
 import Requests from './data/Requests';
-import{
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route exact path='/'>
-            {/* navbar */}
-            <Nav />
+      {/* navbar */}
+      <Nav />
 
-            {/* banner */}
-            <Banner />
+      {/* banner */}
+      <Banner />
 
-            {/* rows */}
-            <Row 
-              title="Programmes originaux Netflix"
-              fetchUrl={Requests.fetchNetflixOriginals}
-            />
-            <Row 
-              title="Tendance actuelles"
-              fetchUrl={Requests.fetchTrending}
-              isPoster={true}
-            />
-            <Row 
-              title="Les mieux notés"
-              fetchUrl={Requests.fetchTopRated}
-            />
-            <Row 
-              title="Films d'action"
-              fetchUrl={Requests.fetchActionMovies}
-            />
+      
 
-            {/* video */}
-            <div className="test"></div>
+      {/* rows */}
+      <Row 
+        title="Programmes originaux Netflix"
+        fetchUrl={Requests.fetchNetflixOriginals}
+      />
+      <Row 
+        title="Tendance actuelles"
+        fetchUrl={Requests.fetchTrending}
+        isPoster={true}
+      />
+      <Row 
+        title="Les mieux notés"
+        fetchUrl={Requests.fetchTopRated}
+      />
+      <Row 
+        title="Films d'action"
+        fetchUrl={Requests.fetchActionMovies}
+      />
+    
+        {/* video */}
+        <div className="test"></div>
+        {/* quick view */}
 
-            {/* Footer */}
-            <Footer />
-          </Route>
-          <Route path='/video/:id' component={Video} />
-          <Route path="*">
-            <Navigate to="/"/>
-          </Route>
-        </Routes>
-      </Router>
+      {/* footer */}
+      <Footer />
     </div>
   );
 }

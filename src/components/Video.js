@@ -5,7 +5,7 @@ function Video() {
     <div>
         <p>toto</p>
     </div>
-  )
+  );
 }
 
-export default Video
+export default Video;
