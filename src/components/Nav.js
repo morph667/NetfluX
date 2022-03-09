@@ -45,16 +45,16 @@ function Nav() {
                 </a>
             </nav>
             <div className="nav__actions">
-                <a href="http://" className="nav__link">
+                <a href="http://" className="nav__action">
                     <SearchIcon/>
                 </a>
-                <a href="http://" className="nav__link">
+                <a href="http://" className="nav__action">
                     <CardGiftcardIcon/>
                 </a>
-                <a href="http://" className="nav__link">
+                <a href="http://" className="nav__action">
                     <NotificationsIcon/>
                 </a>
-                <a href="http://" className="nav__link">
+                <a href="http://" className="nav__action">
                     <img src="./images/avatar.png" alt="Avatar" className="nav__avatar" />
                 </a>
             </div>

@@ -1,12 +1,16 @@
 .footer{
 
     color: grey;
-        padding:2rem 1rem 1rem;
+        padding:2rem 1rem;
         font-size: 0.8rem;
 
     a{
         text-decoration: none;
         color:inherit;
+    }
+    .container{
+        max-width: 980px;
+        margin: 0 auto;
     }
 
     &__socials{
